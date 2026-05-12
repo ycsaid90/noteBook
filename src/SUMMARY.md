@@ -12,6 +12,13 @@
 
 # Section 2 "Javascript Basics"
 
-- [Main Javascript Concepts](./js.md)
+- [Main Javascript Concepts](./javascript.md)
+
+---
+# Section 3 "Interview Questions"
+- [Interview Questions](./interview.md)
+
+---
+# Section 4 "English Vocabulary"
 
 - [English Notes](./english.md)

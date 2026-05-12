@@ -57,6 +57,20 @@ console.log(typeof [1, 2, 3]); // "object"
 console.log(typeof null); // "object"
 console.log(typeof function() {}); // "function"
 ```
+- Operators: Difference between `==` and `===`?
+
+The `==` operator compares two values for equality after performing type coercion if necessary. It will convert the operands to a common type before making the comparison. For example:
+```javascript
+console.log(5 == "5");   // true
+console.log(0 == false); // true
+console.log(null == undefined); // true
+```
+The `===` operator, also known as the strict equality operator, compares two values for equality without performing type coercion. It checks both the value and the type of the operands. For example:
+```javascript
+console.log(5 === "5"); // false
+console.log(0 === false); // false
+console.log(null === undefined); // false
+```
 
 - What is the difference between `null` and `undefined`?
 
@@ -64,7 +78,7 @@ console.log(typeof function() {}); // "function"
 
     `null` means intentional absence of value.
 
-- What is the difference between session storage, local storage and cookies?
+### Cookies
 
 | Feature           | Session Storage                                   |                   Local Storage                    |                                            Cookies                                        |
 |-------------------|---------------------------------------------------|----------------------------------------------------|-------------------------------------------------------------------------------------------|
@@ -94,7 +108,7 @@ fruits.shift(); // removes the first element ("grape") from the array
 console.log(fruits); // ["apple", "banana", "orange"]
 ```
 
-###Functions
+### Functions
 - What is the difference between function declaration and function expression?
 
 A function declaration is a named function that is defined using the `function` keyword. It is hoisted to the top of its scope, which means it can be called before it is defined in the code. For example:
@@ -209,14 +223,13 @@ if (x > 10) {
   console.log("x is less than or equal to 10");
 }
 ```
-### Ternaty operator
+- Ternaty operator
 The ternary operator is a shorthand way of writing an `if-else` statement.
 
 The syntax is:
 ```javascript
 condition ? expressionIfTrue : expressionIfFalse
 ```
-
 For example:
 ```javascript  const age = 18;
 const canVote = age >= 18 ? "Yes" : "No";
@@ -228,23 +241,7 @@ let color = status === 'offline' ? 'red' : 'blue';
 console.log(color); // Output: 'red'
 ```
 
-### Operators
-- What is the difference between `==` and `===`?
-
-The `==` operator compares two values for equality after performing type coercion if necessary. It will convert the operands to a common type before making the comparison. For example:
-```javascript
-console.log(5 == "5");   // true
-console.log(0 == false); // true
-console.log(null == undefined); // true
-```
-The `===` operator, also known as the strict equality operator, compares two values for equality without performing type coercion. It checks both the value and the type of the operands. For example:
-```javascript
-console.log(5 === "5"); // false
-console.log(0 === false); // false
-console.log(null === undefined); // false
-```
-
-### What is the difference between microtask and macrotask?
+### Microtask and Macrotask
 
 - Microtask
 A microtask has higher priority.
@@ -293,27 +290,6 @@ Output:
 > macrotask
 ```
 
-- Difference between Typescript and Javascript?
-- What is the difference between function declaration and function expression?
-- What is the difference between arrow function and regular function?
-- What is the difference between call, apply and bind?
-- What is the difference between synchronous and asynchronous code?
-- What is the difference between callback and promise?
-- What is the difference between promise and async/await?
-- What is the difference between event loop and call stack?
-- What is the difference between hoisting and scoping?
-- What is the difference between closure and scope?
-- What is the difference between prototype and class?
-- What is the difference between object and class?
-- What is the difference between object and array?
-- What is the difference between object and function?
-- What is the difference between object and primitive?
-- What is the difference between object and reference?
-- What is the difference between object and value?
-- What is the difference between object and type?
-- What is the difference between object and instance?
-- What is the difference between object and property?
-- What is the difference between object and method?
-- What is the difference between object and constructor?
+
 
 ---
