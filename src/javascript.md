@@ -1,7 +1,5 @@
 # Javascript
 
--Difference between Typescript and Javascript
-
 ### Variables and Types
 - What is the difference between var, let and const?
 
@@ -75,6 +73,26 @@ console.log(typeof function() {}); // "function"
 | Storage Limit     | 5-10 MB                                           | 5-10 MB                                            | 4 KB                                                                                      |
 | Accessibility     | Accessible only within the same session           | Accessible across sessions                         | Accessible across sessions and can be sent to the server with each HTTP request           |
 | Use Cases         | Data that should be cleared when the session ends | Persistent data that should remain across sessions | Data that needs to be sent to the server with each request, such as authentication tokens |
+
+### Arrays
+```javascript const fruits = ["apple", "banana", "orange"];
+const numbers = [1, 2, 3, 4, 5];
+const mixed = ["hello", 42, true
+];
+```
+- Push and Pop
+```javascript fruits.push("grape"); // adds "grape" to the end of the array
+console.log(fruits); // ["apple", "banana", "orange", "grape"]
+fruits.pop(); // removes the last element ("grape") from the array
+console.log(fruits); // ["apple", "banana", "orange"]
+```
+
+- Shift and Unshift
+```javascript fruits.unshift("grape"); // adds "grape" to the beginning of the array
+console.log(fruits); // ["grape", "apple", "banana", "orange"]
+fruits.shift(); // removes the first element ("grape") from the array
+console.log(fruits); // ["apple", "banana", "orange"]
+```
 
 ###Functions
 - What is the difference between function declaration and function expression?
@@ -191,6 +209,24 @@ if (x > 10) {
   console.log("x is less than or equal to 10");
 }
 ```
+### Ternaty operator
+The ternary operator is a shorthand way of writing an `if-else` statement.
+
+The syntax is:
+```javascript
+condition ? expressionIfTrue : expressionIfFalse
+```
+
+For example:
+```javascript  const age = 18;
+const canVote = age >= 18 ? "Yes" : "No";
+console.log(canVote); // "Yes"
+```
+
+```javascript status = 'offline';
+let color = status === 'offline' ? 'red' : 'blue';
+console.log(color); // Output: 'red'
+```
 
 ### Operators
 - What is the difference between `==` and `===`?
@@ -208,9 +244,9 @@ console.log(0 === false); // false
 console.log(null === undefined); // false
 ```
 
-- What is the difference between microtask and macrotask?
+### What is the difference between microtask and macrotask?
 
-Microtask
+- Microtask
 A microtask has higher priority.
 It runs right after the current synchronous code finishes, before the event loop moves to the next macrotask.
 
@@ -222,7 +258,7 @@ Promise.finally()
 queueMicrotask()
 ```
 
-Macrotask
+- Macrotask
 A macrotask has lower priority.
 It runs after all microtasks have been processed and the event loop is ready to handle the next macrotask.
 
@@ -257,26 +293,7 @@ Output:
 > macrotask
 ```
 
-- Ternaty operator
-The ternary operator is a shorthand way of writing an `if-else` statement.
-The syntax is:
-
-```javascript
-condition ? expressionIfTrue : expressionIfFalse
-```
-
-For example:
-```javascriptconst age = 18;
-const canVote = age >= 18 ? "Yes" : "No";
-console.log(canVote); // "Yes"
-```
-
-```javascript status = 'offline';
-let color = status === 'offline' ? 'red' : 'blue';
-console.log(color); // Output: 'red'
-```
-
-
+- Difference between Typescript and Javascript?
 - What is the difference between function declaration and function expression?
 - What is the difference between arrow function and regular function?
 - What is the difference between call, apply and bind?
