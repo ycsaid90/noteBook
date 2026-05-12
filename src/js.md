@@ -257,6 +257,26 @@ Output:
 > macrotask
 ```
 
+- Ternaty operator
+The ternary operator is a shorthand way of writing an `if-else` statement.
+The syntax is:
+
+```javascript
+condition ? expressionIfTrue : expressionIfFalse
+```
+
+For example:
+```javascriptconst age = 18;
+const canVote = age >= 18 ? "Yes" : "No";
+console.log(canVote); // "Yes"
+```
+
+```javascript status = 'offline';
+let color = status === 'offline' ? 'red' : 'blue';
+console.log(color); // Output: 'red'
+```
+
+
 - What is the difference between function declaration and function expression?
 - What is the difference between arrow function and regular function?
 - What is the difference between call, apply and bind?
