@@ -3,7 +3,11 @@
 | # | Javascript Questions | Response |
 |---|---|---|
 | 1 | What is variable? | [View answer](javascript.md#variables) |
-| 2 | Difference between Typescript and Javascript? Types | [View answer](javascript.md#variables) |
+| 1 | Difference between Typescript and Javascript? Types | [View answer](answers.md#Typescript) |
+| 2 | What is the difference between var, let and const? |
+| 3 | What is the difference between function declaration and function expression? |
+| 4 | What is the difference between arrow function and regular function? |
+| 5 | What types are instance JS? |
 | 3 | What is the difference between session storage, local storage and cookies? | [View answer](javascript.md#cookies) |
 | 3 | What is the difference between function declaration and function expression? | [View answer](javascript.md#functions) |
 | 4 | What is the difference between arrow function and regular function? |
