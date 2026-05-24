@@ -38,14 +38,62 @@ user.name = "Luis"; // allowed
 user = {};         // Error
 ```
 
+- Math Methods
+```javascript
+console.log(Math.PI); // 3.141592653589793
+console.log(Math.sqrt(16)); // 4 (square root of 16)
+console.log(Math.pow(2, 3)); // 8  (2 raised to the power of 3)
+console.log(Math.abs(-5)); // 5 (absolute value)
+console.log(Math.floor(3.7)); // 3 (floor rounds down to the nearest integer)
+console.log(Math.ceil(3.2)); // 4  (ceil rounds up to the nearest integer)
+console.log(Math.round(3.5)); // 4  (round rounds to the nearest integer)
+console.log(Math.max(1, 5, 3)); // 5 (max returns the largest of the given numbers)
+console.log(Math.min(1, 5, 3)); // 1 (min returns the smallest of the given numbers)
+console.log(Math.random()); // returns a random number between 0 (inclusive) and 1 (exclusive)
+```
+example:
+```javascript
+const randomInt = Math.floor(Math.random() * 10) + 1; // generates a random integer between 1 and 10
+console.log(randomInt);
+```
+
 - Types in javascript
 
 Primitives (7): `string`, `number`, `boolean`, `null`, `undefined`, `symbol`, `bigint`
 
 Non primitives: `object`, `array`, `function`
+
+- String Methods
+```javascript
+const str = " Hello, World!";
+console.log(str.trim()); // "Hello, World!"  (removes whitespace from both ends)
+console.log(str.length); // 13               (length of the string)
+console.log(str.toUpperCase()); // "HELLO, WORLD!" (converts to uppercase)
+console.log(str.toLowerCase()); // "hello, world!"  (converts to lowercase)
+console.log(str.includes("World")); // true     (checks if "World" is in the string)
+console.log(str.indexOf("o")); // 4        (returns the index of the first occurrence of "o" and is toLowerCase sensitive)
+console.log(str.slice(0, 5)); // "Hello"    (slices the string from index 0 to 5)
+console.log(str.replace("World", "JavaScript")); // "Hello, JavaScript!" (replaces "World" with "JavaScript")
+```
+> [!NOTE]
+- Difference between concatenation and interpolation?
+
+- Concatenation is the process of joining two or more strings together using the `+` operator. For example:
+```javascript
+const firstName = "Ana";
+const lastName = "Smith";
+```
+```javascript
+const fullName = firstName + " " + lastName; // "Ana Smith"
+```
+- Interpolation, on the other hand, is a way to embed expressions within a string using template literals (enclosed in backticks ``). It allows you to include variables and expressions directly within the string
+```javascript
+const fullName = `${firstName} ${lastName}`; // "Ana Smith"
+```
+
 > [!NOTE]
 - When you use `typeof` operator on a variable, it will return the type of the variable as a string. For example:
-```
+```javascript
 console.log(typeof "Hello"); // "string"
 console.log(typeof 42); // "number"
 console.log(typeof 9007199254740991n); // "bigint"
@@ -95,15 +143,21 @@ const mixed = ["hello", 42, true
 ];
 ```
 - Push and Pop
-```javascript fruits.push("grape"); // adds "grape" to the end of the array
+```javascript
+fruits.push("grape"); // adds "grape" to the end of the array
 console.log(fruits); // ["apple", "banana", "orange", "grape"]
+```
+```javascript
 fruits.pop(); // removes the last element ("grape") from the array
 console.log(fruits); // ["apple", "banana", "orange"]
 ```
 
 - Shift and Unshift
-```javascript fruits.unshift("grape"); // adds "grape" to the beginning of the array
+```javascript
+fruits.unshift("grape"); // adds "grape" to the beginning of the array
 console.log(fruits); // ["grape", "apple", "banana", "orange"]
+```
+```javascript
 fruits.shift(); // removes the first element ("grape") from the array
 console.log(fruits); // ["apple", "banana", "orange"]
 ```
