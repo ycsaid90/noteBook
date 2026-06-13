@@ -1,2 +1,2 @@
 # mdbook
-My first mdbook project. This are my studies notes. I will be adding more content soon. Stay tuned!
+📚 My personal knowledge base. Documenting my learning journey, one topic at a time. I will be adding more content soon. Stay tuned!
