@@ -270,3 +270,43 @@ console.log("end");
 | Storage Limit | ~5-10 MB | ~5-10 MB | ~4 KB |
 | Sent to server automatically | No | No | Yes |
 | Common Use Case | Temporary page/session state | Long-lived UI preferences | Auth/session tokens and server needs |
+
+
+````javascript
+let date = new Date();
+const formattedDate = date.toISOString().split('T')[0];
+console.log(`Formatted date: ${formattedDate}`);  2026-06-12
+````
+
+####
+> [!IMPORTANT]
+> API
+```javascript
+response = await page.request.get('https://example.com/api/data');
+response.json() -> Parses the response body as JSON and returns a JavaScript object.
+response.text() -> Parses the response body as text and returns a string.
+response.status() -> Returns the HTTP status code of the response.
+response.ok() -> Returns true if the status code is in the range 200-299, otherwise false.
+JSON.stringify(object) -> Converts a JavaScript object to a JSON string.
+JSON.parse(string) -> Parses a JSON string and returns a JavaScript object.
+````
+> [!IMPORTANT]
+> Desestructurar en JavaScript
+````javascript
+  const {status, body} = response; - Desestructuración para extraer el status y el body de la respuesta.
+  const {status, body: { data: { meta: { message } } }} = response; - Desestructuración anidada para extraer el mensaje del meta dentro del data del body de la respuesta.
+  const { status, body: {data, data: { meta: { message } } } } = response;
+
+````
+
+````javascript
+if (![200, 201].includes(status))  - Verifica si el status de la respuesta no es 200 o 201, lo que indica un error en la solicitud.
+
+````
+
+> [!IMPORTANT]
+> List and Dropdown
+```javascript
+await page.getByRole('list')        //When the List has a UL tag
+await page.getByRole('listitem');   //When the List has a LI tag
+````
