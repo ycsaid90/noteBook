@@ -1,31 +1,30 @@
 # Summary
 
-[Introduction](./chapter_intro.md)
+---
+# Section "Playwright Basics"
+- [Installation](./Playwright%20Fundamentals/installation.md)
+    - [First Steps](./Playwright%20Fundamentals/playwright.md)
+
+
 ---
 
-# Section 1 "Playwright Basics"
-
-- [First Steps](./Playwright%20Fundamentals/playwright.md)
-  - [Installation](./chapter_1.1.md)
-
----
-
-# Section 2 "Javascript Basics"
+# Section "Javascript Basics"
 
 - [Main Javascript Concepts](./Javascript%20Fundamentals/javascript.md)
 
 ---
-# Section 3 "Interview Questions"
+# Section "Interview Questions"
 - [Interview Questions](./Preparation%20Interview/interview.md)
 - [Answers](./Preparation%20Interview/answers.md)
 
 ---
-# Section 4 "English Vocabulary"
+# Section "English Vocabulary"
 
 - [English Notes](./English%20Learning/english.md)
 
 
 ---
-# Section 5 "MdBook Notes"
+# Section "MdBook Notes"
 - [MdBook Notes](./MdBook%20Notes/mdbook.md)
+
 

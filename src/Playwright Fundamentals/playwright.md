@@ -1,18 +1,8 @@
 # Playwright
 
-- [Playwright](www.playwright.com) is a Node.js library to automate Chromium, Firefox and WebKit with a single API. It is built to enable cross-browser web automation that is ever-green, capable, reliable and fast.
-<sub>Reference [Playwright](www.playwright.com)</sub>
+- **Playwright** is a Node.js library to automate Chromium, Firefox and WebKit with a single API. It is built to enable cross-browser web automation that is ever-green, capable, reliable and fast.
+<sub>Reference [Playwright](https://playwright.dev/docs/intro)</sub>
 
-# Getting Started
-Install Playwright
-````bash
-npm init playwright@latest
-````
-
-Update latest version of Playwright Test
-````bash
-npm init -D playwright/test@latest
-````
 - Main Concepts
   - Browser: A browser instance (Chromium, Firefox, WebKit)
   - Context: An isolated incognito-like session within a browser
@@ -34,7 +24,7 @@ export const test = base.extend({
         const pm = new PageManager(page)
         await use(pm);
         console.log('Teardown logic After execute  pageManager fixture');
-    }, auto: true}] - run automatically even beforeeach and beforeall
+    }, auto: true}] - run automatically even beforeEach and beforeAll
 })
 ````
 > Sequence of execution on Fixtures
@@ -94,7 +84,6 @@ await expect(locator).toHaveCSS(property, value);
 > Attached, Visible, Stable, Enabled, Editable, Hidden, Detached
 
 
-
 ### Timeouts
 ````javascript
 globalTimeout: 160_000,  //Limit of the whole test suite
@@ -107,7 +96,6 @@ expect: { timeout: 160_000 },    //Time Limit for expect locator assertions (exp
 ````
 
 
-
 ####
 > [!IMPORTANT]
 > Playwright by default run test in parallel assigning 1 independent worker per spec file
@@ -118,20 +106,16 @@ test.describe.configure({ mode: 'parallel' }); // Run tests in parallel (default
 test.describe.configure({ mode: 'serial' });   // Run tests in serial (one after another)
 ````
 
-
-
 > [!IMPORTANT]
 > Desestructurar en JavaScript
 ````javascript
   const {status, body} = response; - Desestructuración para extraer el status y el body de la respuesta.
   const {status, body: { data: { meta: { message } } }} = response; - Desestructuración anidada para extraer el mensaje del meta dentro del data del body de la respuesta.
   const { status, body: {data, data: { meta: { message } } } } = response;
-
 ````
 
 ````javascript
 if (![200, 201].includes(status))  - Verifica si el status de la respuesta no es 200 o 201, lo que indica un error en la solicitud.
-
 ````
 
 > [!IMPORTANT]
