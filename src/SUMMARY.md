@@ -1,15 +1,11 @@
 # Summary
-
 ---
 # Section "Playwright Basics"
 - [Installation](./Playwright%20Fundamentals/installation.md)
     - [First Steps](./Playwright%20Fundamentals/playwright.md)
 
-
 ---
-
 # Section "Javascript Basics"
-
 - [Main Javascript Concepts](./Javascript%20Fundamentals/javascript.md)
 
 ---
@@ -19,12 +15,15 @@
 
 ---
 # Section "English Vocabulary"
-
 - [English Notes](./English%20Learning/english.md)
-
 
 ---
 # Section "MdBook Notes"
 - [MdBook Notes](./MdBook%20Notes/mdbook.md)
 
+---
+# Section "Git Notes"
+- [Git](./Git/git.md)
+
+---
 

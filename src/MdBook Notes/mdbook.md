@@ -17,6 +17,13 @@ mdbook build
 ```bash
 mdbook serve
 ```
+
+## Add a mdbook picture
+```markdown
+![ProfileImage](images/image.jpg)
+![ProfileImage]<img src="../images/1765899302483.jpg" alt="Yadira Photo" width="300">
+```
+
 ## Summary
 The `SUMMARY.md` file is used to define the structure of the book. It is a markdown file that contains a list of links to the chapters and sections of the book. The links should be in the format `[Chapter Title](path/to/chapter.md)`. The `SUMMARY.md` file should be located in the root directory of the book.
 

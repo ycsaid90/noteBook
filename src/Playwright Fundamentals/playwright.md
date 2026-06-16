@@ -107,9 +107,9 @@ test.describe.configure({ mode: 'serial' });   // Run tests in serial (one after
 ````
 
 > [!IMPORTANT]
-> Desestructurar en JavaScript
+> Destructuring syntax is a JavaScript syntax that makes it possible to unpack values from arrays, or properties from objects, into distinct variables. [reference](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring)
 ````javascript
-  const {status, body} = response; - Desestructuración para extraer el status y el body de la respuesta.
+  const {status, body} = response; - Destructuring para extraer el status y el body de la respuesta.
   const {status, body: { data: { meta: { message } } }} = response; - Desestructuración anidada para extraer el mensaje del meta dentro del data del body de la respuesta.
   const { status, body: {data, data: { meta: { message } } } } = response;
 ````
